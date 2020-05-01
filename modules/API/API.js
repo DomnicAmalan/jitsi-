@@ -104,10 +104,10 @@ function initCommands() {
             sendAnalytics(createApiEvent('subject.changed'));
             APP.store.dispatch(setSubject(subject));
         },
-        'submit-feedback': feedback => {
-            sendAnalytics(createApiEvent('submit.feedback'));
-            APP.conference.submitFeedback(feedback.score, feedback.message);
-        },
+        // 'submit-feedback': feedback => {
+        //     sendAnalytics(createApiEvent('submit.feedback'));
+        //     APP.conference.submitFeedback(feedback.score, feedback.message);
+        // },
         'toggle-audio': () => {
             sendAnalytics(createApiEvent('toggle-audio'));
             logger.log('Audio toggle: API command received');
@@ -145,10 +145,10 @@ function initCommands() {
 
             APP.store.dispatch(toggleTileView());
         },
-        'video-hangup': (showFeedbackDialog = true) => {
-            sendAnalytics(createApiEvent('video.hangup'));
-            APP.conference.hangup(showFeedbackDialog);
-        },
+        // 'video-hangup': (showFeedbackDialog = true) => {
+        //     sendAnalytics(createApiEvent('video.hangup'));
+        //     APP.conference.hangup(showFeedbackDialog);
+        // },
         'email': email => {
             sendAnalytics(createApiEvent('email.changed'));
             APP.conference.changeLocalEmail(email);
