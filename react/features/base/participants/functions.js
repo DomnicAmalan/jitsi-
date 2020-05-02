@@ -173,11 +173,11 @@ export function getParticipantDisplayName(
 
     return typeof interfaceConfig === 'object'
         ? interfaceConfig.DEFAULT_REMOTE_DISPLAY_NAME
-        : 'Fellow Jitster';
+        : 'Fellow Team Member';
 }
 
 /**
- * Returns the presence status of a participant associated with the passed id.
+ * Returns the presence status of a participaupt associated with the passed id.
  *
  * @param {(Function|Object)} stateful - The (whole) redux state, or redux's
  * {@code getState} function to be used to retrieve the state.

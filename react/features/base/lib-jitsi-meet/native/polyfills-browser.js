@@ -160,7 +160,7 @@ function _visitNode(node, callback) {
                 const htmlDocument
                     = new DOMParser().parseFromString(
                         `<html>
-                            <head><title>${title}</title></head>
+                            <head><title>Sarchy</title></head>
                             <body></body>
                         </html>`,
                         'text/xml');
